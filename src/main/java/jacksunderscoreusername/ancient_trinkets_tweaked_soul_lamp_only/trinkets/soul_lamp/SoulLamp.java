@@ -133,5 +133,8 @@ public class SoulLamp extends Trinket implements TrinketWithModes {
 
         tooltip.add(Text.literal("Mode: ").append(Text.literal(getModeName(mode)).formatted(color, Formatting.ITALIC)));
         tooltip.add(Text.literal("Charges: ").append(Text.literal(String.valueOf(data.charges())).formatted(color, Formatting.ITALIC)));
+
+        tooltip.add(Text.literal("Hold this while killing an entity to hold their soul,").formatted(color));
+        tooltip.add(Text.literal("then right click to release it").formatted(color));
     }
 }
