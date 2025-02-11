@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "ancient_trinkets_tweaked_soul_lamp_only",
+	"version": "${version}",
+	"name": "Soul Lamp (tweaked from Ancient Trinkets)",
+	"description": "A mod that adds a tweaked version of the soul lamp from the Ancient Trinkets mod",
+	"authors": [
+		"jacks-underscore-username"
+	],
+	"contact": {
+		"sources": "https://github.com/Jacks-underscore-username/trinkets-tweaked-soul-lamp-only-1.21.4"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/ancient_trinkets_tweaked_soul_lamp_only/Mod Icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "jacksunderscoreusername.ancient_trinkets_tweaked_soul_lamp_only.Main"
+		],
+		"client": [
+			"jacksunderscoreusername.ancient_trinkets_tweaked_soul_lamp_only.MainClient"
+		]
+	},
+	"mixins": [
+		"ancient_trinkets_tweaked_soul_lamp_only.mixins.json",
+		{
+			"config": "ancient_trinkets_tweaked_soul_lamp_only.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+	}
+}
